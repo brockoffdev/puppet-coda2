@@ -5,7 +5,8 @@
 #   include coda2
 class coda2 {
   package { 'Coda2':
-    provider => 'zip',
+    ensure => installed,
+    provider => 'compressed_app',
     source   => 'http://download.panic.com/coda/Coda%202.0.14.zip'
   }
 }
